@@ -15,6 +15,7 @@
       align-items: center;
       min-height: 100vh;
       box-sizing: border-box;
+      position: relative;
     }
 
     .player-container {
@@ -49,6 +50,31 @@
       height: 48px;
       margin-top: 10px;
     }
+
+    .greeting-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff69b4;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+      transition: background 0.2s;
+    }
+
+    .greeting-link:hover {
+      background: #e457a1;
+    }
+
+    @media (max-width: 600px) {
+      .greeting-link {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -61,5 +87,8 @@
       הדפדפן שלך לא תומך בנגן האודיו.
     </audio>
   </div>
+
+  <!-- 🎁 Greeting link -->
+  <a class="greeting-link" href="greeting.pdf" target="_blank">🎉 ברכה ליום ההולדת</a>
 </body>
 </html>

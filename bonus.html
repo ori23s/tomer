@@ -7,53 +7,69 @@
   <style>
     body {
       font-family: sans-serif;
-      background: #fff9f5;
+      background: linear-gradient(to bottom right, #fdf2f8, #ffffff);
       margin: 0;
       padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    .player-container {
+      max-width: 380px;
+      width: 100%;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       text-align: center;
+      padding: 20px;
     }
 
-    .container {
-      max-width: 400px;
-      margin: auto;
-    }
-
-    img {
+    .player-container img {
       width: 100%;
       border-radius: 10px;
     }
 
-    h1 {
-      font-size: 20px;
+    .player-container h1 {
+      font-size: 18px;
       margin: 15px 0 5px;
     }
 
-    h2 {
+    .player-container h2 {
       font-size: 14px;
-      color: #666;
+      color: #555;
       margin: 0 0 15px;
     }
 
     audio {
       width: 100%;
+      max-width: 100%;
+      height: 48px;
       margin-top: 10px;
     }
 
-    a.back-link {
-      display: block;
+    .back-link {
+      display: inline-block;
       margin-top: 20px;
+      font-size: 14px;
+      color: #ff69b4;
       text-decoration: none;
-      color: #888;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="new_image.jpg" alt="שיר נוסף">
-    <h1>שיר נוסף מיוחד</h1>
+  <div class="player-container">
+    <img src="second_image.jpg" alt="שיר נוסף">
+    <h1>שיר חדש במיוחד</h1>
     <h2>אורי סטי</h2>
     <audio controls>
-      <source src="new_song.mp3" type="audio/mpeg">
+      <source src="second_song.mp3" type="audio/mpeg">
       הדפדפן שלך לא תומך בנגן האודיו.
     </audio>
 

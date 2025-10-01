@@ -68,3 +68,38 @@
     .floating-button:hover {
       background: #e457a1;
     }
+
+    .greeting-link {
+      right: 20px;
+    }
+
+    .bonus-link {
+      left: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .floating-button {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="player-container">
+    <img src="tomergift.jpg" alt="Album Art">
+    <h1>הפרח (הנמלה) בגני</h1>
+    <h2>אורי סטי</h2>
+    <audio controls>
+      <source src="Nueva grabación.mp3" type="audio/mpeg">
+      הדפדפן שלך לא תומך בנגן האודיו.
+    </audio>
+  </div>
+
+  <!-- 🎧 Bonus song (bottom left) -->
+  <a class="floating-button bonus-link" href="wonderwall.html">🎧 שיר נוסף</a>
+
+  <!-- 🎁 Greeting PDF (bottom right) -->
+  <a class="floating-button greeting-link" href="greeting.pdf" target="_blank">🎉 ברכה לגיוס</a>
+</body>
+</html>
